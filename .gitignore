@@ -1,2 +1,22 @@
-.DS_Store
-.env.local
+# Dependencies
+**/node_modules
+**/.pnp
+**/.pnp.js
+
+# Testing
+**/coverage
+
+# frontend
+frontend/next-env.d.ts
+
+# Production
+**/build
+**/dist
+**/.next
+**/.turbo
+
+# Misc
+**/.DS_Store
+**/*.pem
+**/.env*
+**/*.log
