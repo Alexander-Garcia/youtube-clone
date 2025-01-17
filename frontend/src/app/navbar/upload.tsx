@@ -1,8 +1,8 @@
-"use client";
+'use client';
 
-import { uploadVideo } from "../firebase/functions";
-import styles from "./upload.module.css";
-import Image from "next/image";
+import { uploadVideo } from '../firebase/functions';
+import styles from './upload.module.css';
+import Image from 'next/image';
 
 export default function Upload() {
   const handleFileChange = async (
@@ -12,7 +12,7 @@ export default function Upload() {
     if (file) {
       try {
         await uploadVideo(file);
-        alert("Upload successful");
+        alert('Upload successful');
       } catch (error) {
         alert(`Failed to upload: ${error}`);
       }

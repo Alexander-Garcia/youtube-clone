@@ -1,12 +1,12 @@
-"use client";
-import Image from "next/image";
-import Link from "next/link";
-import { useEffect, useState } from "react";
-import { User } from "firebase/auth";
-import styles from "./navbar.module.css";
-import SignIn from "./sign-in";
-import { onAuthStateChangedHelper } from "../firebase/firebase";
-import Upload from "./upload";
+'use client';
+import Image from 'next/image';
+import Link from 'next/link';
+import { useEffect, useState } from 'react';
+import { User } from 'firebase/auth';
+import styles from './navbar.module.css';
+import SignIn from './sign-in';
+import { onAuthStateChangedHelper } from '../firebase/firebase';
+import Upload from './upload';
 
 export default function Navbar() {
   const [user, setUser] = useState<User | null>(null);
@@ -37,4 +37,3 @@ export default function Navbar() {
     </nav>
   );
 }
-

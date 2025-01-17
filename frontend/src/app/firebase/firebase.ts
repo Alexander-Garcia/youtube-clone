@@ -1,11 +1,11 @@
-import { initializeApp } from "firebase/app";
+import { initializeApp } from 'firebase/app';
 import {
   getAuth,
   signInWithPopup,
   GoogleAuthProvider,
   onAuthStateChanged,
   User,
-} from "firebase/auth";
+} from 'firebase/auth';
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -41,7 +41,7 @@ export const signOut = () => {
  * @param callback - A callback function to be called with the current user
  */
 export const onAuthStateChangedHelper = (
-  callback: (user: User | null) => void
+  callback: (user: User | null) => void,
 ) => {
   return onAuthStateChanged(auth, callback);
 };
