@@ -1,8 +1,9 @@
 {
   "name": "functions",
   "scripts": {
-    "lint": "npx eslint",
-    "lint:fix": "npx eslint . --fix",
+    "lint": "eslint",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write src/**/*.ts",
     "build": "tsc",
     "build:watch": "tsc --watch",
     "serve": "npm run build && firebase emulators:start --only functions",
@@ -12,7 +13,7 @@
     "logs": "firebase functions:log"
   },
   "engines": {
-    "node": "21"
+    "node": "22"
   },
   "main": "lib/index.js",
   "dependencies": {
